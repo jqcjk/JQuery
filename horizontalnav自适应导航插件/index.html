@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>jQuery自适应宽度导航插件Horizo​​ntalNav 演示</title>
+<style>
+.horizontal-nav {
+    background: #efefef;
+    border-radius: 6px;
+}
+.horizontal-nav ul {
+	margin: 0;
+	padding: 0;
+    background: #128F9A;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #0e7079;
+    list-style-type: none;
+}
+.horizontal-nav ul li {
+    float: left;
+    border-left: 1px solid #0e7079;
+}
+.horizontal-nav ul li:first-child {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255, 0.25);
+    border-left: 1px solid rgba(255,255,255, 0.25);
+}
+.horizontal-nav ul li:first-child a {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a:hover {
+    background: #12808a;
+}
+.horizontal-nav ul li:first-child a {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.horizontal-nav ul li:last-child a {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.clearfix:before, .clearfix:after {
+	content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+</style>
+<script src="script/jquery-1.7.2.min.js"></script>
+<script src="script/jquery.horizontalNav.js"></script>
+<script>
+$(document).ready(function() {
+    $('.full-width').horizontalNav({});
+});
+</script>
+</head>
+
+<body>
+<h1>jQuery自适应宽度导航插件Horizo​​ntalNav 演示</h1>
+
+<div class="demo">
+    <h2>未使用的</h2>
+    <div class="horizontal-nav horizontalNav-notprocessed clearfix">
+        <ul>
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="#">工作</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">联系</a></li>
+        </ul>
+    </div>
+    
+    <h2>使用的</h2>
+    <div class="horizontal-nav full-width horizontalNav-notprocessed">
+        <ul>
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="#">工作</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">联系</a></li>
+            <li><a href="#">联系2</a></li>
+            <li><a href="#">联系3</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { text-align: center;}
+
+.demo { padding:0 10%; font-size: 14px;}
+.demo li a { text-decoration: none;}
+
+.explanation { width: 708px; margin: 100px auto 0; padding: 10px; line-height: 20px; border: 1px solid #ccc; font-size: 12px;}
+.explanation h2 { margin: 0; padding: 0; font-size: 12px;}
+.explanation p { margin: 0; padding: 0;}
+
+.vad { margin:30px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; margin:0 5px; padding:5px 10px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<div class="explanation">
+    <h2>说明</h2>
+    <p>你可以改变窗口大小看看导航自动适应效果。</p>
+</div>
+
+</body>
+</html>
